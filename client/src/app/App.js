@@ -7,9 +7,10 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      <DigitalClock />
-      <DigitalClock />
-      <DigitalClock />
+      <DigitalClock country="Ghent" utc={2} />
+      <DigitalClock country="Ankarra" utc={3} />
+      <DigitalClock country="Peking" utc={8}/>
+      <DigitalClock country="Los Angeles" utc={-7}/>
     </div>
   );
 }
