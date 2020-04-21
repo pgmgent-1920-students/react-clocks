@@ -1,6 +1,6 @@
 import React, { } from 'react';
 
-import { DigitalClock, DigitalClockExtended } from './components';
+import { BinaryClock, DigitalClock, DigitalClockExtended } from './components';
 
 import './App.css';
 
@@ -13,6 +13,7 @@ const App = () => {
       <DigitalClock country="Los Angeles" utc={-7}/>
       <DigitalClockExtended utc={-7} />
       <DigitalClockExtended utc={7}/>
+      <BinaryClock />
     </div>
   );
 }
