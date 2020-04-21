@@ -7,3 +7,5 @@ const LED = () => {
     </div>
   );
 };
+
+export default LED;

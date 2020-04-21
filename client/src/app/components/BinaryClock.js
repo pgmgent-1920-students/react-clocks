@@ -1,15 +1,16 @@
 import React from 'react';
+
 import LEDStrip from './LEDStrip';
 
 const BinaryClock = () => {
   return (
     <div className="binary-clock">
-      <LEDStrip />
-      <LEDStrip />
-      <LEDStrip />
-      <LEDStrip />
-      <LEDStrip />
-      <LEDStrip />
+      <LEDStrip amount={2} />
+      <LEDStrip amount={4} />
+      <LEDStrip amount={3} />
+      <LEDStrip amount={4} />
+      <LEDStrip amount={3} />
+      <LEDStrip amount={4} />
     </div>
   );
 };
