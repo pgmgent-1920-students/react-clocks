@@ -2,7 +2,7 @@ import React from 'react';
 
 import LED from './LED';
 
-const LEDStrip = ({amount = 1, v = 1}) => {
+const LEDStrip = ({amount = 1, v = 2}) => {
   const toBits = (input, n) => {
     input = String(input);
     while (input.length < n) {
@@ -11,12 +11,12 @@ const LEDStrip = ({amount = 1, v = 1}) => {
     return input;
   };
 
-  const binaryValue = Number(v).toString(2);
-  console.log(toBits(binaryValue, amount));
+  const binaryValueString = Number(v).toString(2);
+  const binaryValue = toBits(binaryValueString, amount);
 
   const leds = [];
   for (let i = 0; i < amount ; i++) {
-    leds.push(<LED />);
+    leds.push(<LED key={i} isOn={binaryValue !== null ? (binaryValue[i] === '1' ? true : false) : false} />);
   }  
 
   return (
