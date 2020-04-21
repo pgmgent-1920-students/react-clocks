@@ -1,10 +1,8 @@
 import React from 'react';
 
-const LED = () => {
+const LED = ({isOn = false}) => {
   return (
-    <div className="led">
-      L
-    </div>
+    <div className={(isOn) ? 'led led--ison' : 'led'}></div>
   );
 };
 

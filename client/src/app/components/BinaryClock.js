@@ -2,6 +2,8 @@ import React from 'react';
 
 import LEDStrip from './LEDStrip';
 
+import './BinaryClock.css';
+
 const BinaryClock = () => {
   return (
     <div className="binary-clock">
